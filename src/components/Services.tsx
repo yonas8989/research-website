@@ -1,0 +1,74 @@
+"use client";
+import React from "react";
+import type { ServiceCard } from "../Types";
+
+const services: ServiceCard[] = [
+  {
+    title: "Mobile App Development",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/7a0ba4969dc3b72d6dd900a1166c1875486dd1381845150aaf7356a52117c525?placeholderIfAbsent=true",
+  },
+  {
+    title: "Web Design & Development",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/6208850f2d5c3fdf40f696234c0ce1361cac68f42d220fcf5cf08eb0a634b6df?placeholderIfAbsent=true",
+    gradient: "bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)]",
+  },
+  {
+    title: "Software Testing Service",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+  },
+];
+
+const ServiceCard: React.FC<ServiceCard> = ({
+  title,
+  description,
+  icon,
+  gradient,
+}) => {
+  return (
+    <article
+      className={`flex py-9 px-4 rounded-lg shadow-lg bg-neutral-50 ${gradient ? "border border-solid border-[#F76680]" : ""}`}
+    >
+      <div className="mr-0">
+        {icon && (
+          <img
+            src={icon}
+            alt={`${title} icon`}
+            className="object-contain aspect-square w-[58px] mb-4"
+          />
+        )}
+        <h3
+          className={`text-xl font-semibold leading-none ${gradient ? "bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] text-transparent" : "text-gray-700"}`}
+        >
+          {title}
+        </h3>
+        <p className="mt-5 text-sm leading-6 text-slate-500">{description}</p>
+      </div>
+    </article>
+  );
+};
+
+export const Services: React.FC = () => {
+  return (
+    <section className="flex flex-col self-stretch py-14 w-full bg-slate-50">
+      <h2 className="self-center text-4xl font-bold leading-loose text-gray-900">
+        Services we offer
+      </h2>
+      <div className="flex flex-wrap gap-5 justify-center mt-16 max-md:mt-10">
+        {services.map((service) => (
+          <div
+            key={service.title}
+            className="w-full md:w-[calc(33.333%-1.25rem)]"
+          >
+            <ServiceCard {...service} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
