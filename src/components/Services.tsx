@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import type { ServiceCard } from "../Types";
+import { motion } from "framer-motion";
+import type { ServiceCard as ServiceCardType } from "../Types";
 
-const services: ServiceCard[] = [
+const services: ServiceCardType[] = [
   {
     title: "Mobile App Development",
     description:
@@ -24,15 +25,21 @@ const services: ServiceCard[] = [
   },
 ];
 
-const ServiceCard: React.FC<ServiceCard> = ({
+const ServiceCard: React.FC<ServiceCardType> = ({
   title,
   description,
   icon,
   gradient,
 }) => {
   return (
-    <article
-      className={`flex py-9 px-4 rounded-lg shadow-lg bg-neutral-50 ${gradient ? "border border-solid border-[#F76680]" : ""}`}
+    <motion.article
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{ scale: 1.05 }}
+      className={`flex py-9 px-4 rounded-lg shadow-lg bg-neutral-50 transition-transform ${
+        gradient ? "border border-solid border-[#F76680]" : ""
+      }`}
     >
       <div className="mr-0">
         {icon && (
@@ -43,32 +50,44 @@ const ServiceCard: React.FC<ServiceCard> = ({
           />
         )}
         <h3
-          className={`text-xl font-semibold leading-none ${gradient ? "bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] text-transparent" : "text-gray-700"}`}
+          className={`text-xl font-semibold leading-none ${
+            gradient
+              ? "bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] text-transparent"
+              : "text-gray-700"
+          }`}
         >
           {title}
         </h3>
         <p className="mt-5 text-sm leading-6 text-slate-500">{description}</p>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
 export const Services: React.FC = () => {
   return (
-    <section className="flex flex-col self-stretch py-14 w-full bg-slate-50">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="flex flex-col self-stretch py-14 w-full bg-slate-50"
+    >
       <h2 className="self-center text-4xl font-bold leading-loose text-gray-900">
         Services we offer
       </h2>
       <div className="flex flex-wrap gap-5 justify-center mt-16 max-md:mt-10">
-        {services.map((service) => (
-          <div
+        {services.map((service, index) => (
+          <motion.div
             key={service.title}
             className="w-full md:w-[calc(33.333%-1.25rem)]"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             <ServiceCard {...service} />
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
