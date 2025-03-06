@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col items-center w-full">
+    <footer className="flex flex-col items-center w-full ">
       <div className="flex flex-wrap gap-5 justify-between px-20 py-24 mt-36 w-full font-bold rounded-3xl bg-[linear-gradient(225deg,#F1F1F5_0%,#E4ECF7_100%)] max-w-[1230px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <h2 className="text-4xl bg-clip-text bg-[linear-gradient(225deg,#29272E_0%,#27272E_100%)] leading-[55px] max-md:max-w-full">
           Hire the best developers and designers around!
@@ -12,9 +12,9 @@ export const Footer: React.FC = () => {
         </button>
       </div>
 
-      <div className="flex flex-wrap gap-5 justify-between items-start mt-32 w-full max-w-[1230px] max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-wrap gap-5 justify-between items-start mt-32 w-full max-w-[1230px] max-md:mt-10 max-md:max-w-full p-4 ">
         <div className="flex flex-col items-start">
-          <h3 className="text-base text-black">Ik developers</h3>
+          <h3 className="text-base text-black ">Ik developers</h3>
           <p className="self-stretch mt-3.5 text-lg leading-8 text-slate-500">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
