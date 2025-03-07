@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
 
       <div className="self-stretch mt-20 w-full border border-solid bg-slate-300 border-slate-300 min-h-px max-md:mt-10 max-md:max-w-full" />
       <p className="mt-9 text-sm tracking-normal leading-none text-slate-600">
-        © 2023 Copyright by IK Developers. All rights reserved.
+        © 2025 Copyright by yonas Fikadie. All rights reserved.
       </p>
     </footer>
   );

@@ -23,6 +23,24 @@ const services: ServiceCardType[] = [
       "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
     icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
   },
+  {
+    title: "Software Testing Service",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+  },
+  {
+    title: "Software Testing Service",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+  },
+  {
+    title: "Software Testing Service",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+  },
 ];
 
 const ServiceCard: React.FC<ServiceCardType> = ({
