@@ -5,7 +5,6 @@ import { Hero } from "./Hero";
 import { Services } from "./Services";
 import { CaseStudies } from "./CaseStudy";
 import { Testimonials } from "./Testimonial";
-import { TechStack } from "./TechStack";
 import { Footer } from "./Footer";
 import SoftwareDevelopmentSection from "./SoftwareDevelopmentSection";
 
@@ -25,7 +24,6 @@ export const ResearchGroup: React.FC = () => {
 
       <Testimonials />
 
-      <TechStack />
       <SoftwareDevelopmentSection/>
 
       <Footer />
