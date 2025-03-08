@@ -1,24 +1,26 @@
 "use client";
 import React from "react";
 import type { CaseStudy } from "../Types";
-
+import ai from '../assets/ai.jpg';
+import ml from '../assets/ml.jpg';
+import blockChain from '../assets/blockChain.jpg';
 const caseStudies: CaseStudy[] =  [
   {
     title: "Advancements in Artificial Intelligence",
     description: "This research explores the latest advancements in artificial intelligence, focusing on machine learning algorithms and their applications in various industries.",
-    image: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/71521d006e35683f208afb2025553b5904fd19e4867872d451c8ca412a6cd17d?placeholderIfAbsent=true",
+    image: ai,
     backgroundColor: "bg-indigo-50"
   },
   {
     title: "Blockchain for Secure Data Sharing",
     description: "This study investigates the use of blockchain technology for secure and decentralized data sharing, highlighting its potential to revolutionize data privacy and integrity.",
-    image: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/bc180df9609d6a78c8d14b93a2007d38024c1e72deb42f2acad6a15dd5d7eb7d?placeholderIfAbsent=true",
+    image: blockChain,
     backgroundColor: "bg-green-50"
   },
   {
     title: "Machine Learning in Climate Science",
     description: "This research focuses on the application of machine learning models to predict climate change impacts, using historical data to forecast future trends.",
-    image: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/c0522b600ba59092bfb66ffc8884a296ed3bf2a657d2571a54627333e1e8ed28?placeholderIfAbsent=true",
+    image: ml,
     backgroundColor: "bg-red-50"
   }
 ];

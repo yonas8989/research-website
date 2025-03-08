@@ -12,7 +12,7 @@ export const SoftwareDevelopmentSection: React.FC = () => {
       <DecoHeading>
         <span style={{ fontWeight: 400 }}>Way of building</span>
         <br />
-        Great Software
+        Great Project
       </DecoHeading>
       <div className="flex shrink-0 mt-16 rounded-full bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] h-[72px] w-[72px] max-md:mt-10" />
       {/* way of building */}
@@ -240,9 +240,9 @@ export const SoftwareDevelopmentSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span style={{ fontWeight: 400 }}>Featured </span>
+            <span style={{ fontWeight: 400 }}>Clients And  </span>
             <br />
-            Resources
+            Collaborators
           </motion.span>
         </DecoHeading>
 
@@ -254,7 +254,7 @@ export const SoftwareDevelopmentSection: React.FC = () => {
           >
             <BlogPostCard
               imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/5143d6ba8252abb29da721b56ec8db37f6fb2bde3707ba468e24a1d7b2aa1b48?placeholderIfAbsent=true&apiKey=57008dd1d75646d791eed9e7fd6ed313"
-              title="How to Build a Scalable Application up to 1 Million Users on AWS"
+              title="Dashen Bank Sc"
             />
           </motion.div>
           <motion.div
@@ -264,7 +264,7 @@ export const SoftwareDevelopmentSection: React.FC = () => {
           >
             <BlogPostCard
               imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/03dcdb59039ae93d4a1ce850e4b361ce5df5bdb13e507d61b55ab3b22f54bf4a?placeholderIfAbsent=true&apiKey=57008dd1d75646d791eed9e7fd6ed313"
-              title="How to Build a Scalable Application up to 1 Million Users on AWS"
+              title="Ethiopian Agriculture instituete"
             />
           </motion.div>
           <motion.div
@@ -274,7 +274,7 @@ export const SoftwareDevelopmentSection: React.FC = () => {
           >
             <BlogPostCard
               imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/48502b85101f0f5f126983229846bfaa0066e0cef707aca8bd68b31c036be92b?placeholderIfAbsent=true&apiKey=57008dd1d75646d791eed9e7fd6ed313"
-              title="How to Build a Scalable Application up to 1 Million Users on AWS"
+              title="Ethiopia Artifitial intellegence institute "
             />
           </motion.div>
           <motion.div
@@ -284,7 +284,7 @@ export const SoftwareDevelopmentSection: React.FC = () => {
           >
             <BlogPostCard
               imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/fef135d700beb672f4a4aaf168c32095b2eae0f8e34168be3f80896142b2a283?placeholderIfAbsent=true&apiKey=57008dd1d75646d791eed9e7fd6ed313"
-              title="How to Build a Scalable Application up to 1 Million Users on AWS"
+              title="Addis Ababa univeristy"
             />
           </motion.div>
         </div>
