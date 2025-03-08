@@ -1,6 +1,6 @@
 export const Hero: React.FC = () => {
     return (
-      <section className="flex flex-wrap justify-center items-center mt-16 max-md:mt-10 max-md:max-w-full">
+      <section className="flex flex-wrap justify-center items-center mt-50 max-md:mt-10 max-md:max-w-full">
         <div className="flex flex-col self-stretch my-auto min-w-60 w-[531px] max-md:max-w-full">
           <div className="max-w-full w-[531px]">
             <h1 className="text-5xl font-extrabold text-gray-900 leading-[71px] max-md:max-w-full max-md:text-4xl max-md:leading-[59px]">
