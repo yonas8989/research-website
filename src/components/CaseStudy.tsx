@@ -2,32 +2,27 @@
 import React from "react";
 import type { CaseStudy } from "../Types";
 
-const caseStudies: CaseStudy[] = [
+const caseStudies: CaseStudy[] =  [
   {
-    title: "Website Design for SCFC Canada",
-    description:
-      "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/71521d006e35683f208afb2025553b5904fd19e4867872d451c8ca412a6cd17d?placeholderIfAbsent=true",
-    backgroundColor: "bg-indigo-50",
+    title: "Advancements in Artificial Intelligence",
+    description: "This research explores the latest advancements in artificial intelligence, focusing on machine learning algorithms and their applications in various industries.",
+    image: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/71521d006e35683f208afb2025553b5904fd19e4867872d451c8ca412a6cd17d?placeholderIfAbsent=true",
+    backgroundColor: "bg-indigo-50"
   },
   {
-    title: "Website Design for SCFC Canada",
-    description:
-      "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/bc180df9609d6a78c8d14b93a2007d38024c1e72deb42f2acad6a15dd5d7eb7d?placeholderIfAbsent=true",
-    backgroundColor: "bg-green-50",
+    title: "Blockchain for Secure Data Sharing",
+    description: "This study investigates the use of blockchain technology for secure and decentralized data sharing, highlighting its potential to revolutionize data privacy and integrity.",
+    image: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/bc180df9609d6a78c8d14b93a2007d38024c1e72deb42f2acad6a15dd5d7eb7d?placeholderIfAbsent=true",
+    backgroundColor: "bg-green-50"
   },
   {
-    title: "Website Design for SCFC Canada",
-    description:
-      "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/c0522b600ba59092bfb66ffc8884a296ed3bf2a657d2571a54627333e1e8ed28?placeholderIfAbsent=true",
-    backgroundColor: "bg-red-50",
-  },
+    title: "Machine Learning in Climate Science",
+    description: "This research focuses on the application of machine learning models to predict climate change impacts, using historical data to forecast future trends.",
+    image: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/c0522b600ba59092bfb66ffc8884a296ed3bf2a657d2571a54627333e1e8ed28?placeholderIfAbsent=true",
+    backgroundColor: "bg-red-50"
+  }
 ];
+
 
 export const CaseStudies: React.FC = () => {
   return (

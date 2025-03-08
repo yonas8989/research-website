@@ -1,45 +1,54 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBrain,
+  faLink,
+  faCloud,
+  faShieldAlt,
+  faChartLine,
+  faNetworkWired,
+} from "@fortawesome/free-solid-svg-icons";
 import type { ServiceCard as ServiceCardType } from "../Types";
 
 const services: ServiceCardType[] = [
   {
-    title: "Mobile App Development",
+    title: "Artificial Intelligence",
     description:
       "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/7a0ba4969dc3b72d6dd900a1166c1875486dd1381845150aaf7356a52117c525?placeholderIfAbsent=true",
-  },
-  {
-    title: "Web Design & Development",
-    description:
-      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/6208850f2d5c3fdf40f696234c0ce1361cac68f42d220fcf5cf08eb0a634b6df?placeholderIfAbsent=true",
+    icon: faBrain, // FontAwesome icon for AI
     gradient: "bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)]",
   },
   {
-    title: "Software Testing Service",
+    title: "Blockchain Technology",
     description:
       "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+    icon: faLink, // FontAwesome icon for Blockchain
   },
   {
-    title: "Software Testing Service",
+    title: "Cloud Computing",
     description:
       "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+    icon: faCloud, // FontAwesome icon for Cloud Computing
   },
   {
-    title: "Software Testing Service",
+    title: "Cybersecurity",
     description:
       "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+    icon: faShieldAlt, // FontAwesome icon for Cybersecurity
   },
   {
-    title: "Software Testing Service",
+    title: "Data Science",
     description:
       "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: "https://cdn.builder.io/api/v1/image/assets/57008dd1d75646d791eed9e7fd6ed313/0c540e477a082f5ec4980f122186312c6d6ab7368202fbf97f83230c6b57bd4f?placeholderIfAbsent=true",
+    icon: faChartLine, // FontAwesome icon for Data Science
+  },
+  {
+    title: "Internet of Things (IoT)",
+    description:
+      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    icon: faNetworkWired, // FontAwesome icon for IoT
   },
 ];
 
@@ -64,14 +73,16 @@ const ServiceCard: React.FC<ServiceCardType> = ({
     >
       <div className="mr-0">
         {icon && (
-          <motion.img
-            src={icon}
-            alt={`${title} icon`}
-            className="object-contain aspect-square w-[58px] mb-4"
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-          />
+          >
+            <FontAwesomeIcon
+              icon={icon}
+              className="text-4xl text-purple-900 mb-4"
+            />
+          </motion.div>
         )}
         <h3
           className={`text-xl font-semibold leading-none ${
@@ -109,7 +120,7 @@ export const Services: React.FC = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="self-center text-4xl font-bold leading-loose text-gray-900"
       >
-        Services we offer
+        Research Areas
       </motion.h2>
       <div className="flex flex-wrap gap-5 justify-center mt-16 max-md:mt-10">
         {services.map((service, index) => (

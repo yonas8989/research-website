@@ -10,11 +10,11 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl font-extrabold text-gray-900 leading-[71px] max-md:max-w-full max-md:text-4xl max-md:leading-[59px]">
-            <span className="font-light text-[45px]">Great </span>
-            <span className="font-bold text-[45px]">Product</span>
-            <span className="font-light text-[45px]"> is</span>
+            <span className="font-light text-[45px]">Pioneer   </span>
+            <span className="font-bold text-[45px]">Research</span>
+            <span className="font-light text-[45px]"> Hub</span>
             <br />
-            built by great teams
+            built by great teams  
           </h1>
         </motion.div>
         <motion.p
@@ -23,8 +23,8 @@ export const Hero: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          We help build and manage a team of world-class developers to bring
-          your vision to life
+         Our team of dedicated researchers is committed to solving
+          real-world problems through cutting-edge research and collaboration.
         </motion.p>
         <motion.button
           className="gap-2.5 self-start px-8 py-5 mt-20 text-sm font-semibold leading-none bg-blue-600 rounded-md shadow-2xl text-neutral-50 hover:bg-blue-700 transition-colors max-md:px-5 max-md:mt-10"

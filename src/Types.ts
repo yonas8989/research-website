@@ -1,3 +1,4 @@
+
 export interface NavItem {
     label: string;
     href: string;
@@ -6,7 +7,7 @@ export interface NavItem {
   export interface ServiceCard {
     title: string;
     description: string;
-    icon?: string;
+    icon?: FontAwesomeIcon;
     gradient?: string;
   }
   
