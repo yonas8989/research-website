@@ -4,12 +4,15 @@ export interface NavItem {
     href: string;
   }
   
+  import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
   export interface ServiceCard {
     title: string;
     description: string;
-    icon?: FontAwesomeIcon;
+    icon?: IconDefinition; // Use IconDefinition instead of FontAwesomeIcon
     gradient?: string;
   }
+  
   
   export interface CaseStudy {
     title: string;
